@@ -127,5 +127,6 @@ Result::Type CANWrapper::transmitMailbox(unsigned char mailbox) {
 	return Result::OK;
 }
 
+// TODO: implement CANWrapper::readMailbox(unsigned char)
 //Frame CANWrapper::readMailbox(unsigned char mailbox) {
 //}
