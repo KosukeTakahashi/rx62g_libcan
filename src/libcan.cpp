@@ -13,13 +13,13 @@ using namespace CAN;
 CANWrapper::CANWrapper(void) {}
 
 Result::Type CANWrapper::setup(PinSelection::Type pinSelection,
-							   MailboxMode::Type mbMode,
-							   IDMode::Type idMode,
-							   MsgLostMode::Type msgLostMode,
-							   MsgPriorityMode::Type priorityMode,
-							   TimestampPrescaler::Type prescaler,
-							   BusOffRecoveryMode::Type recoveryMode,
-							   int baudrate) {
+                               MailboxMode::Type mbMode,
+                               IDMode::Type idMode,
+                               MsgLostMode::Type msgLostMode,
+                               MsgPriorityMode::Type priorityMode,
+                               TimestampPrescaler::Type prescaler,
+                               BusOffRecoveryMode::Type recoveryMode,
+                               int baudrate) {
 	IOPORT.PFJCAN.BIT.CANE = 1;
 	switch (pinSelection) {
 	case PinSelection::PB5_PB6:
